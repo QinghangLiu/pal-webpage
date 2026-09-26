@@ -17,14 +17,19 @@
         background: #fff;
       }
 
-      img {
-        display: block;
-        max-width: 100%;
-        height: auto;
+      .document {
+        width: 100%;
+        height: 100vh;
+        border: 0;
       }
     </style>
   </head>
   <body>
-    <img src="image.png" alt="">
+    <object class="document" data="main%20graph.pdf" type="application/pdf">
+      <p>
+        PDF preview is unavailable.
+        <a href="main%20graph.pdf">Open main graph.pdf</a>
+      </p>
+    </object>
   </body>
 </html>
