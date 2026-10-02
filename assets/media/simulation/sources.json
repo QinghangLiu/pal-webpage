@@ -1,0 +1,78 @@
+[
+  {
+    "task": "PickXtimes",
+    "episode": 26,
+    "difficulty": "medium",
+    "source": "runs/eval/main_results/checkpoint-10790_all_env_20260819-135450/PickXtimes/shards/worker3_gpu3/PickXtimes/ep26/PickXtimes_ep26_success_medium_vlm_vla.mp4",
+    "crop": {
+      "x": 0,
+      "y": 384,
+      "width": 512,
+      "height": 256
+    },
+    "fps": 30.0,
+    "screenshots": {
+      "poster": {
+        "frame": 142,
+        "path": "assets/figures/simulation/pickxtimes_sim_poster.jpg"
+      }
+    },
+    "video": "assets/media/simulation/pickxtimes_sim.mp4"
+  },
+  {
+    "task": "VideoPlaceOrder",
+    "episode": 21,
+    "difficulty": "easy",
+    "source": "runs/eval/main_results/checkpoint-10790_all_env_20260819-135450/VideoPlaceOrder/shards/worker3_gpu3/VideoPlaceOrder/ep21/VideoPlaceOrder_ep21_success_easy_vlm_vla.mp4",
+    "crop": {
+      "x": 0,
+      "y": 352,
+      "width": 512,
+      "height": 256
+    },
+    "fps": 30.0,
+    "screenshots": {
+      "poster": {
+        "frame": 487,
+        "path": "assets/figures/simulation/video_place_order_sim_poster.jpg"
+      }
+    },
+    "video": "assets/media/simulation/video_place_order_sim.mp4"
+  },
+  {
+    "task": "VideoUnmask",
+    "episode": 2,
+    "difficulty": "medium",
+    "source": "runs/eval/main_results/checkpoint-10790_all_env_20260819-135450/VideoUnmask/shards/worker3_gpu3/VideoUnmask/ep2/VideoUnmask_ep2_success_medium_vlm_vla.mp4",
+    "crop": {
+      "x": 0,
+      "y": 352,
+      "width": 512,
+      "height": 256
+    },
+    "fps": 30.0,
+    "screenshots": {
+      "poster": {
+        "frame": 99,
+        "path": "assets/figures/simulation/video_unmask_sim_poster.jpg"
+      },
+      "observe": {
+        "frame": 0,
+        "path": "assets/figures/simulation/video_unmask_sim_observe.jpg"
+      },
+      "remember": {
+        "frame": 32,
+        "path": "assets/figures/simulation/video_unmask_sim_remember.jpg"
+      },
+      "plan": {
+        "frame": 67,
+        "path": "assets/figures/simulation/video_unmask_sim_plan.jpg"
+      },
+      "act": {
+        "frame": 198,
+        "path": "assets/figures/simulation/video_unmask_sim_act.jpg"
+      }
+    },
+    "video": "assets/media/simulation/video_unmask_sim.mp4"
+  }
+]
