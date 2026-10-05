@@ -1,0 +1,86 @@
+[
+  {
+    "task": "PatternLock",
+    "demo": "demopl",
+    "source": "data/old_pxt/eval_bundle_ours_framesamp-modul_memer_20260912/runs/backup/demopl/PickXtimes/ep0/annotated_execution_event_review.mp4",
+    "review": "data/old_pxt/eval_bundle_ours_framesamp-modul_memer_20260912/runs/backup/demopl/PickXtimes/ep0/annotated_execution_event_review.mp4",
+    "source_frames": 449,
+    "source_container_fps": 8.0,
+    "reference_playback_fps": 8,
+    "reference_duration_seconds": 56.125,
+    "speed": 4,
+    "speed_reference": "annotated review playback; not wall-clock execution",
+    "crop": {
+      "x": 360,
+      "y": 0,
+      "width": 384,
+      "height": 384
+    },
+    "video": "assets/media/realworld/patternlock_demo_4x.mp4",
+    "poster": "assets/media/realworld/patternlock_demo_4x_poster.jpg",
+    "outcome": "Task completion visually reviewed; evaluator flag is unknown for these demo captures."
+  },
+  {
+    "task": "PickXtimes",
+    "demo": "demopxt",
+    "source": "data/old_pxt/eval_bundle_ours_framesamp-modul_memer_20260912/runs/backup/demopxt/PickXtimes/ep0/raw_observations/base.mp4",
+    "review": "data/old_pxt/eval_bundle_ours_framesamp-modul_memer_20260912/runs/backup/demopxt/PickXtimes/ep0/annotated_execution_event_review.mp4",
+    "source_frames": 1207,
+    "source_container_fps": 30.0,
+    "reference_playback_fps": 8,
+    "reference_duration_seconds": 150.875,
+    "speed": 4,
+    "speed_reference": "annotated review playback; not wall-clock execution",
+    "crop": {
+      "x": 300,
+      "y": 0,
+      "width": 720,
+      "height": 720
+    },
+    "video": "assets/media/realworld/pickxtimes_demo_4x.mp4",
+    "poster": "assets/media/realworld/pickxtimes_demo_4x_poster.jpg",
+    "outcome": "Task completion visually reviewed; evaluator flag is unknown for these demo captures."
+  },
+  {
+    "task": "VideoPlaceOrder",
+    "demo": "demovpo",
+    "source": "data/old_pxt/eval_bundle_ours_framesamp-modul_memer_20260912/runs/backup/demovpo/VideoPlaceOrder/ep0/raw_observations/base.mp4",
+    "review": "data/old_pxt/eval_bundle_ours_framesamp-modul_memer_20260912/runs/backup/demovpo/VideoPlaceOrder/ep0/annotated_execution_event_review.mp4",
+    "source_frames": 446,
+    "source_container_fps": 30.0,
+    "reference_playback_fps": 8,
+    "reference_duration_seconds": 55.75,
+    "speed": 4,
+    "speed_reference": "annotated review playback; not wall-clock execution",
+    "crop": {
+      "x": 300,
+      "y": 0,
+      "width": 720,
+      "height": 720
+    },
+    "video": "assets/media/realworld/video_place_order_demo_4x.mp4",
+    "poster": "assets/media/realworld/video_place_order_demo_4x_poster.jpg",
+    "outcome": "Task completion visually reviewed; evaluator flag is unknown for these demo captures."
+  },
+  {
+    "task": "VideoUnmask",
+    "demo": "demovu",
+    "source": "data/old_pxt/eval_bundle_ours_framesamp-modul_memer_20260912/runs/backup/demovu/PickXtimes/ep0/raw_observations/base.mp4",
+    "review": "data/old_pxt/eval_bundle_ours_framesamp-modul_memer_20260912/runs/backup/demovu/PickXtimes/ep0/annotated_execution_event_review.mp4",
+    "source_frames": 211,
+    "source_container_fps": 30.0,
+    "reference_playback_fps": 8,
+    "reference_duration_seconds": 26.375,
+    "speed": 4,
+    "speed_reference": "annotated review playback; not wall-clock execution",
+    "crop": {
+      "x": 300,
+      "y": 0,
+      "width": 720,
+      "height": 720
+    },
+    "video": "assets/media/realworld/video_unmask_demo_4x.mp4",
+    "poster": "assets/media/realworld/video_unmask_demo_4x_poster.jpg",
+    "outcome": "Task completion visually reviewed; evaluator flag is unknown for these demo captures."
+  }
+]
