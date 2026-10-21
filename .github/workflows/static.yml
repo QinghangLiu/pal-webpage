@@ -1,0 +1,63 @@
+# Simple workflow for deploying static content to GitHub Pages
+name: Deploy static content to Pages
+
+on:
+  # Runs on pushes targeting the default branch
+  push:
+    branches: ["main"]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  # Single deploy job since we're just deploying
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+      - name: Build public website
+        shell: python
+        env:
+          PUBLIC_CODE_URL: ${{ vars.PUBLIC_CODE_URL }}
+        run: |
+         import os
+         from pathlib import Path
+         from shutil import copytree
+  
+         public_url = os.environ["PUBLIC_CODE_URL"].strip()
+         if not public_url.startswith("https://github.com/"):
+             raise SystemExit("Set PUBLIC_CODE_URL first")
+         document = Path("index.html").read_text(encoding="utf-8")
+         anonymous_link = 'href="https://anonymous.4open.science/r/PAL_official-5FD1/"'
+         if document.count(anonymous_link) != 1:
+             raise SystemExit("Expected exactly one anonymous Code link")
+         copytree("assets", "_site/assets", dirs_exist_ok=True)
+         Path("_site/index.html").write_text(
+             document.replace(anonymous_link, f'href="{public_url}"'),
+             encoding="utf-8",
+         )
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5
